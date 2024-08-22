@@ -3,22 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Calculator</title>
 </head>
 <body>
     <div id="calculator">
-        <div id="numbers">
-            <button id="zero" onclick="numberClick(0)">0</button>
-            <button id="one" onclick="numberClick(1)">1</button>
-            <button id="two" onclick="numberClick(2)">2</button>
-            <button id="three" onclick="numberClick(3)">3</button>
-            <button id="four" onclick="numberClick(4)">4</button>
-            <button id="five" onclick="numberClick(5)">5</button>
-            <button id="six" onclick="numberClick(6)">6</button>
-            <button id="seven" onclick="numberClick(7)">7</button>
-            <button id="eight" onclick="numberClick(8)">8</button>
-            <button id="nine" onclick="numberClick(9)">9</button>
+        <header id="display">1209381980</header>
+        <div id="numNop">
+            <div id="numbers">
+                <button id="zero" >0</button>
+                <button id="one" >1</button>
+                <button id="two" >2</button>
+                <button id="three" >3</button>
+                <button id="four" >4</button>
+                <button id="five" >5</button>
+                <button id="six" >6</button>
+                <button id="seven">7</button>
+                <button id="eight">8</button>
+                <button id="nine">9</button>
+            </div>
+            
+            <div id="operations">
+                <button id="clear">AC</button>
+                <button id="equal">=</button>
+                <button id="plus">+</button>
+                <button id="minus">-</button>
+                <button id="divide">/</button>
+                <button id="multiply">*</button>
+            </div>
         </div>
+       
     </div>
     <script src="script.js"></script>
 </body>

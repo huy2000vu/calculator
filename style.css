@@ -1,0 +1,39 @@
+#calculator header{
+    display: flex;
+    justify-content: end;
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+#numbers{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    width: 60%;
+}
+#numbers button:not(#zero){
+    width: 33%;
+    height: auto;
+    /* color: red; */
+}
+#calculator {
+    width: 10%;
+    height: 400px;
+    border: rgb(39, 237, 39) solid 1px;
+    padding: 10px;
+}
+#display{
+    border: 1px solid black;
+    height: 5%;
+    margin-bottom: 10px;
+}
+#numNop{
+    display: flex;
+}
+#operations{
+    display: flex;
+    flex-direction: column;
+}
+#zero{
+    width: 70%;
+}
