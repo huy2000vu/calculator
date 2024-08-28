@@ -78,7 +78,6 @@ operatorButtons.forEach((button) => {
 
 const equalButton = document.getElementById('equal')
 equalButton.addEventListener('click', () =>{
-    num2 = parseInt(displayBox.textContent)
     console.log(`num1; ${num1} num2:${num2} op:${op}`)
     displayValue = operate(num1, op, num2)
     displayNum(displayValue)
