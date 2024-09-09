@@ -17,6 +17,8 @@ function divide(a,b){
 
 function operate(num1, op, num2){
     let res = ''
+    num1 = parseFloat(num1);
+    num2 = parseFloat(num2);
     switch(op){
         case '+':
             res = add(num1,num2)
@@ -78,10 +80,12 @@ operatorButtons.forEach((button) => {
 
 const equalButton = document.getElementById('equal')
 equalButton.addEventListener('click', () =>{
+    num2 = displayValue
     console.log(`num1; ${num1} num2:${num2} op:${op}`)
     displayValue = operate(num1, op, num2)
     displayNum(displayValue)
 })
+
 const backSpaceButton  = document.getElementById('backspace')
 backSpaceButton.addEventListener('click', () => {
     if(num1 === '' && num2 === '') {
